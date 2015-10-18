@@ -1,0 +1,156 @@
+@import "common"
+
+h2
+  font-size: 1.4em
+
+.legend
+  position: relative
+
+  li
+    list-style: none
+    color: #333
+    margin-top: 10px
+    height: 25px
+    line-height: 25px
+    background: url(../images/legend.png) no-repeat
+
+  &:first-child
+    margin-top: 0
+
+  .level-all
+    padding-left: 60px
+    background-position: 0 -76px
+
+  .level-senior
+    padding-left: 40px
+    background-position: 0 -51px
+
+  .level-junior
+    padding-left: 40px
+    background-position: 0 -26px
+
+  .level-newbie
+    padding-left: 40px
+    background-position: 0 -1px
+
+.sessions-list
+  background: #f3f3f3
+
+  h2
+    font-size: 1.2em
+    color: #083038
+
+  .sign-in h2, .opening h2, .lunch h2, .teatime h2, .closing h2
+    text-align: center
+
+  .sign-in, .opening, .session, .break, .lunch, .teatime, .lighting-talk, closing
+    overflow: hidden
+    border-bottom: 1px solid #ccc
+
+  .header
+
+    .time, .room0, .room2
+      height: 40px
+      padding: 10px
+      text-align: center
+      color: #fff
+      letter-spacing: 1px
+
+    .time
+      background-color: #5d5d5d
+
+    .room0
+      background-color: #1f79ff
+
+    .room2
+      background-color: #7ecef4
+
+  .time
+    padding-top: 20px
+    font-size: 1.3em
+    text-align: center
+    color: #c77405
+    font-weight: bold
+
+  .break
+    height: 40px
+    line-height: 40px
+    text-align: center
+    color: #fff
+    background-color: #999
+
+  .note
+    color: #ac2925
+    line-height: 200%
+    font-weight: bold
+
+.session, .lighting-talk
+
+  section
+    position: relative
+    padding: 0 10px
+    margin-left: 30px
+    min-height: 160px
+    background: #f3f3f3
+
+  .room0
+    border-left: 10px solid #1f79ff
+
+  .room2
+    border-left: 10px solid #7ecef4
+
+  .subject
+    font-size: 16px
+    font-weight: bold
+    letter-spacing: 1px
+
+  .speaker
+    font-size: 14px
+    color: #595959
+    letter-spacing: 1px
+
+  .description
+    margin-top: 10px
+    font-size: 13px
+    letter-spacing: 1px
+    line-height: 1.6
+
+  .level-all, .level-newbie, .level-junior, .level-senior
+    background: url(../images/level.png) no-repeat
+
+  .level-all
+    background-position: -90px bottom
+
+  .level-senior
+    background-position: -60px bottom
+
+  .level-junior
+    background-position: -30px bottom
+
+  .level-newbie
+    background-position: 0 bottom
+
+@media (min-width: 768px)
+
+  h2
+    font-size: 1.6em
+
+  .legend
+    float: right
+
+@media (min-width: 992px)
+
+  h2
+    font-size: 1.8em
+
+  .sessions-list
+
+    .time
+      padding: 15px 3px
+      font-size: 1em
+      text-align: right
+
+@media (min-width: 1200px)
+
+  h2
+    font-size: 2em
